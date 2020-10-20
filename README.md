@@ -12,7 +12,7 @@ A simple game of snakes and ladders created on `Python 3.7.6` as a school projec
 
 1. Install `Python 3.7.6`
 
-2 Install Term color `pip install termcolor`
+2. Install Term color `pip install termcolor`
 
 3. Run it
 
