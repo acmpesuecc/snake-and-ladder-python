@@ -7,6 +7,7 @@ A simple game of snakes and ladders created on `Python 3.7.6` as a school projec
 ### Dependencies
 
 - `Python 3.7.6`
+- `termcolor 1.1.0`
 
 ### Setup
 
