@@ -30,4 +30,4 @@ $ python3 Snakes.py
 
 4. With each roll the grid gets updated with an updated score the goal.
 
-5 The first person to reach the end will be declared as a winner
+5. The first person to reach the end will be declared as a winner
