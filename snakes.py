@@ -1,5 +1,6 @@
 import termcolor as tc, random
 import colorama
+from time import sleep
 colorama.init()
 def assign_color(players):
     """ assigns different colors to different player's beeds
@@ -227,6 +228,18 @@ def play_game():
         if input("It's %s's %s chance:\nroll the DICE: " %(crrnt_plyr.capitalize(),crrnt_plyr_clr)).lower().strip() == "roll".lower().strip():
             current_chance = random.randrange(1,7)
             print("\nROLLING ...\n")
+            slee(2)
+            #Clear the screen for dice roll
+            print(chr(27) + "[2J")
+            
+            # Dice roll simulator. You can increase the amount of rolls and the speed of the rolls.
+            # Current rolls set to 10
+            # Current speed set to .2 of a second.
+            for i in rnage(10):
+                dice(random.randrange(1,7))
+                sleep(.2)
+                print(chr(27) + "[2J")
+            # Game continues as regular.
             print("It's a %s !." %(tc.colored(current_chance,"blue",None,["bold","underline"])))
             # show the dice image
             dice(current_chance)
