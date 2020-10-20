@@ -24,7 +24,7 @@ $ python Snakes.py
 
 2. The grid gets loaded with user's beed at the start position
 
-3. Press <kbd>rollr</kbd> to roll the dice.
+3. Press <kbd>roll</kbd> to roll the dice.
 
 4. With each roll the grid gets updated with an updated score the goal.
 
