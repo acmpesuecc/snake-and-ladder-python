@@ -1,6 +1,7 @@
 import termcolor as tc, random
 import colorama
 import time
+import os
 colorama.init()
 def assign_color(players):
     """ assigns different colors to different player's beeds
@@ -236,6 +237,7 @@ def play_game():
             update_players(players,crrnt_plyr,current_chance)
             if not(is_gameover(players)[0]):
                 display_board(players,prepare_board(),colors)
+            os.system("clear")
         else:
             print("Your chance is dismissed because you did'nt roll the dice !!")
         # increase the counter
