@@ -1,5 +1,6 @@
 import termcolor as tc, random
 import colorama
+import time
 colorama.init()
 def assign_color(players):
     """ assigns different colors to different player's beeds
@@ -227,6 +228,7 @@ def play_game():
         if input("It's %s's %s chance:\nroll the DICE: " %(crrnt_plyr.capitalize(),crrnt_plyr_clr)).lower().strip() == "roll".lower().strip():
             current_chance = random.randrange(1,7)
             print("\nROLLING ...\n")
+            time.sleep(30)
             print("It's a %s !." %(tc.colored(current_chance,"blue",None,["bold","underline"])))
             # show the dice image
             dice(current_chance)
