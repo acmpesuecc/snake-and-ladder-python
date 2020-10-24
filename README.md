@@ -13,12 +13,41 @@ A simple game of snakes and ladders created on `Python 3.7.6` as a school projec
 
 1. Install `Python 3.7.6`
 
-2. Install Term color `pip install termcolor`
+2. Install and activate the virtual environment
+```
+pip install virtualenv
+```
+
+If you haven't already, clone this project from your fork, and enter the main directory.
+
+```
+# on linux/macOS
+source env/bin/activate
+# on windows
+env\bin\activate
+```
+
+Your command prompt should look something like this -
+
+```
+(env) $ 
+```
+
+3. Install all dependencies
+
+```
+pip install -r requirements.txt
+```
+
+In the event you want to add a dependency, make sure to `pip install` it only when the virtualenv is active. Once that is done, run the following command to add your dependency to `requirements.txt` -
+```
+pip freeze > requirements.txt
+```
 
 3. Run it
 
 ```
-$ python3 Snakes.py
+(env) $ python Snakes.py
 ```
 
 # Rules
